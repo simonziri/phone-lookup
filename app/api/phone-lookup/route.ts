@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 import phones from "../../../data/phones.json";
 
 const ALLOWED_ORIGINS = [
