@@ -59,6 +59,8 @@ export async function POST(request: Request) {
   const headers = corsHeaders(allowed);
 
   const token = request.headers.get("X-Phone-Token");
+  console.log("Token received:", token);
+  console.log("Token expected:", process.env.PHONE_TOKEN);
   if (!token || token !== process.env.PHONE_TOKEN) {
     return new Response("Forbidden", { status: 403, headers });
   }
