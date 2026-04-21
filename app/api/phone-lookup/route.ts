@@ -4,6 +4,9 @@ const ALLOWED_ORIGINS = [
   "https://www.tarro.com",
   "https://tarro.com",
   "https://tarr-001.webflow.io",
+  "https://www.simonziri.com",
+  "https://simonziri.com",
+  "https://simonziri.webflow.io",
 ];
 
 function corsHeaders(origin: string) {
